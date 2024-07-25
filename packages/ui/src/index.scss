@@ -1,0 +1,45 @@
+@import "./assets/fonts/SofiaPro.scss";
+
+.light-theme {
+  --bg-color: white;
+  --bg-color-2: #f6f7f9;
+
+  --primary-color: #ffd700;
+  --primary-color-light: #b7eaee3d;
+  --primary-color-light2: #b7eaee;
+  --secondary-color: #dfe3e6;
+
+  --neutrals-n-40: #f4f6fa;
+  --neutrals-n-400: #464f5e;
+  --text-color-active: #1c1876;
+
+  --text-color-primary: , #ffffff;
+  --text-color-secondary: #637085;
+  --text-color-disable: #8c9ba5;
+
+  --input-border-color: #dfe3e6;
+  --input-border-primary: #8c9ba5;
+
+  --input-bg-color: white;
+  --input-error-color: #ff0000;
+
+  --primary-btn-initial-color: #ffd700;
+  --primary-btn-text-color: #ffffff;
+
+  // font size
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+
+  // line height
+  --lh-24: 24px;
+  --lh-20: 20px;
+  --lh-16: 16px;
+
+  //padding
+  --p-16: 16px;
+  --p-8: 8px;
+  --p-4: 4px;
+}

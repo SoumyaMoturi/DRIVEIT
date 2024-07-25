@@ -1,0 +1,12 @@
+.main-page {
+  .image-section {
+    height: 732px;
+    background: linear-gradient(
+        0deg,
+        rgba(8, 22, 48, 0.33) 0%,
+        rgba(8, 22, 48, 0.33) 100%
+      ),
+      url("./../../../assets/icons/mainPage.png") lightgray 50% / cover
+        no-repeat;
+  }
+}
