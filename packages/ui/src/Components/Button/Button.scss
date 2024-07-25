@@ -1,0 +1,94 @@
+.ant-btn {
+  box-shadow: none;
+  font-family: "Sofia Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  .button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.small {
+    height: 28px;
+  }
+  &.medium {
+    height: 40px;
+  }
+  &.large {
+    height: 48px;
+  }
+  &.custom-ant-primary-btn {
+    background-color: #f1bc00;
+    border-color: #f1bc00;
+    color: #ffffff;
+    &:hover {
+      background-color: #f1bc00;
+      border-color: #f1bc00;
+    }
+    &:active {
+      background: #f1bc00;
+    }
+    // &:focus-visible {
+    //   outline: 2px solid #f1bc00;
+    //   outline-offset: 2px;
+    // }
+    // &:disabled {
+    //   background: var(--neutrals-n50);
+    //   border-color: var(--neutrals-n50);
+    //   color: var(--neutrals-n100) !important;
+    // }
+  }
+  &.custom-ant-secondary-naked-btn {
+    background-color: transparent !important;
+    border-color: #f1bc00;
+    color: #f1bc00 !important;
+    font-weight: 400;
+    &:hover {
+      background-color: transparent !important;
+      border-color: #f1bc00;
+    }
+    &:active {
+      background: #f1bc00;
+    }
+    // &:focus-visible {
+    //   outline: 2px solid #f1bc00;
+    //   outline-offset: 2px;
+    // }
+  }
+  &.custom-ant-secondary-btn {
+    background-color: var(--white);
+    border: 1px solid var(--neutrals-n100) !important;
+    color: var(--secondary-blue-b300) !important;
+    font-weight: 500;
+    &:hover {
+      background-color: var(--neutrals-n50);
+      border-color: var(--neutrals-n50);
+    }
+    &:active {
+      background: var(--neutrals-n75);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--secondary-blue-b200);
+      outline-offset: 2px;
+    }
+  }
+  &.custom-ant-tertiary-btn {
+    background-color: #ffffff;
+    border-radius: 32px;
+    border-color: #081630;
+    color: var(--neutrals-n400) !important;
+    &:hover {
+      background-color: #f1bc00;
+      border-color: #f1bc00;
+    }
+    &:active {
+      background: #f1bc00;
+    }
+    // &:focus-visible {
+    //   outline: 2px solid #f1bc00;
+    //   outline-offset: 2px;
+    // }
+  }
+}

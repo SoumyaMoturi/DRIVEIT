@@ -1,0 +1,18 @@
+.rentby {
+  color: "#081630" !important;
+  .rent-type-cards {
+    display: flex;
+
+    margin-top: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 8702px;
+
+    .ant-card {
+      width: 182px;
+      height: 118px;
+      border-radius: 7.868px;
+      background: rgba(8, 22, 48, 0.05);
+    }
+  }
+}

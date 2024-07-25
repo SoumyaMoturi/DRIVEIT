@@ -1,0 +1,10 @@
+/node_modules
+/packages/**/node_modules
+/packages/api/dist
+/packages/api/coverage
+/packages/ui/build
+/packages/ui/.parcel-cache
+/packages/ui/dist
+/packages/api/.nyc_output
+/.next
+yalc.lock
