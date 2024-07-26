@@ -1,4 +1,25 @@
 .layout {
+  .left-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      display: flex;
+      flex-direction: row;
+      height: 116px;
+      .D {
+        width: 29px;
+        height: 26px;
+        margin-left: 5px;
+        overflow: hidden;
+      }
+      .RIVEIT {
+        width: 150px;
+        height: 26px;
+        overflow: hidden;
+      }
+    }
+  }
   .ant-layout-header {
     display: flex;
     flex-direction: row;
@@ -41,6 +62,13 @@
         font-size: 13px;
       }
     }
+  }
+
+  .ant-layout-content {
+    background: "#f0f2f5";
+    padding: 60px;
+    // display: flex;
+    // justify-content: center;
   }
 
   .ant-layout-footer {
