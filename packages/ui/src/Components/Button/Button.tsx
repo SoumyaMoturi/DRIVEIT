@@ -22,8 +22,11 @@ const Button = ({
       loading={loading}
     >
       <>
-        <span> {btnIcon && <>{btnIcon}&nbsp;&nbsp;</>}</span>
-        <span>{btnTitle}</span>
+        <span className="btn-icon">
+          {" "}
+          {btnIcon && <>{btnIcon}&nbsp;&nbsp;</>}
+        </span>
+        <span className="btn-title">{btnTitle}</span>
       </>
     </AntButton>
   );

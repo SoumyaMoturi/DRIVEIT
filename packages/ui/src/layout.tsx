@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Breadcrumb, Col, Layout, Menu, MenuProps, Row, theme } from "antd";
 
@@ -8,6 +8,8 @@ import PageFooter from "./Components/Footer/footer";
 
 import "./layout.scss";
 import MainPage from "./Pages/MainPage/Main/Main";
+import CarList from "./Pages/CarListing";
+import ContactPage from "./Pages/ContactPage";
 
 const { Header, Content, Footer } = Layout;
 
@@ -42,6 +44,37 @@ const items: MenuItem[] = [
 
 const App: React.FC = () => {
   const [searchtext, setSearchText] = useState("");
+  const [content, setContent] = useState(null);
+  const [selectedMenuItem, setSelectedMenuItem] = useState("contact");
+  const showContentByMenu = (): any => {
+    switch (selectedMenuItem) {
+      case "selfDrives": {
+        return <div>self drives</div>;
+      }
+      case "cabs": {
+        return <div>Cabs</div>;
+      }
+      case "luxuryCars": {
+        return <div>Luxury Cars</div>;
+      }
+      case "buses": {
+        return <div>Buses</div>;
+      }
+      case "contact": {
+        return <ContactPage />;
+      }
+      case "about": {
+        return <div>About</div>;
+      }
+      default: {
+        return <div>Empty page</div>;
+      }
+    }
+  };
+
+  useEffect(() => {
+    setContent(showContentByMenu());
+  }, [selectedMenuItem]);
 
   return (
     <div className="layout">
@@ -57,19 +90,29 @@ const App: React.FC = () => {
             justifyContent: "space-between",
           }}
         >
-          <div className="menu">
-            {/* <div className="logo">
-              <img alt="D" src={require("./assets/icons/D.png")} />
-              <img alt="RIVEIT" src={require("./assets/icons/RIVEIT.png")} />
-            </div> */}
+          <div className="left-nav">
+            <div className="logo">
+              <img
+                className="D"
+                alt="D"
+                src={require("./assets/icons/D.png")}
+              />
+              <img
+                className="RIVEIT"
+                alt="RIVEIT"
+                src={require("./assets/icons/RIVEIT.png")}
+              />
+            </div>
             <Menu
               theme="dark"
               mode="horizontal"
-              defaultSelectedKeys={["2"]}
+              defaultSelectedKeys={[selectedMenuItem]}
               items={items}
+              onClick={({ key }) => {
+                setSelectedMenuItem(key);
+              }}
               style={{ flex: 1, minWidth: 0 }}
             />
-            {/* <NavBar /> */}
           </div>
           <div className="buttons">
             <Search
@@ -101,7 +144,10 @@ const App: React.FC = () => {
           </div>
         </Header>
         <Content>
-          <MainPage />
+          {/* <MainPage /> */}
+          {/* <CarList /> */}
+          {/* <ContactPage /> */}
+          {content}
         </Content>
         <Footer>
           <PageFooter />
