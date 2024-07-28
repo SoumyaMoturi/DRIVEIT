@@ -1,7 +1,9 @@
 import React from "react";
+
+import FindVehicle from "../../../Components/FindVehicle/FindVehicle";
+import HowItWorks from "../../HowItWorks";
+
 import "./main.scss";
-// import { HomeOutlined, SettingOutlined, UserOutlined } from "@ant-design/icons";
-import RentByBrand from "../RentByBrand";
 
 const MainPage = () => {
   const cardItems = [
@@ -32,14 +34,32 @@ const MainPage = () => {
   ];
 
   return (
-    <div className="main-page">
-      <div className="image-section"></div>
-      <div className="rent-by-brands">
+    <div className="dashboard-page">
+      <div className="image-section">
+        <div className="dashboard-heading">
+          <div>
+            <img
+              className="curls"
+              alt="curls"
+              src={require("../../../assets/icons/curls.svg")}
+            />
+          </div>
+          <div>No matter where you’re going to, we’ll take you there</div>
+        </div>
+        <div className="testmonials"></div>
+        <div className="filters">
+          <FindVehicle />
+        </div>
+      </div>
+      {/* <div className="rent-by-brands">
         <RentByBrand
           rentByType="brands"
           title="Rent By Brands"
           cardItems={cardItems}
         />
+      </div> */}
+      <div className="how-it-works">
+        <HowItWorks />
       </div>
     </div>
   );

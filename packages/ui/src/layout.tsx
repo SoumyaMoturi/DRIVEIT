@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Breadcrumb, Col, Layout, Menu, MenuProps, Row, theme } from "antd";
+import { Layout, Menu, MenuProps } from "antd";
 
 import Button from "./Components/Button/Button";
 import Search from "./Components/Search/search";
@@ -8,7 +8,6 @@ import PageFooter from "./Components/Footer/footer";
 
 import "./layout.scss";
 import MainPage from "./Pages/MainPage/Main/Main";
-import CarList from "./Pages/CarListing";
 import ContactPage from "./Pages/ContactPage";
 
 const { Header, Content, Footer } = Layout;
@@ -42,12 +41,15 @@ const items: MenuItem[] = [
   },
 ];
 
-const App: React.FC = () => {
+const PageLayout: React.FC = () => {
   const [searchtext, setSearchText] = useState("");
   const [content, setContent] = useState(null);
-  const [selectedMenuItem, setSelectedMenuItem] = useState("contact");
+  const [selectedMenuItem, setSelectedMenuItem] = useState("logo");
   const showContentByMenu = (): any => {
     switch (selectedMenuItem) {
+      case "logo": {
+        return <MainPage />;
+      }
       case "selfDrives": {
         return <div>self drives</div>;
       }
@@ -91,7 +93,7 @@ const App: React.FC = () => {
           }}
         >
           <div className="left-nav">
-            <div className="logo">
+            <div className="logo" onClick={() => setSelectedMenuItem("logo")}>
               <img
                 className="D"
                 alt="D"
@@ -135,7 +137,7 @@ const App: React.FC = () => {
             &nbsp;
             <Button
               btnOnClick={() => {
-                console.log("signup");
+                console.log("sign up clicked");
               }}
               btnTitle="Sign Up"
               showBtn={true}
@@ -144,10 +146,12 @@ const App: React.FC = () => {
           </div>
         </Header>
         <Content>
-          {/* <MainPage /> */}
-          {/* <CarList /> */}
-          {/* <ContactPage /> */}
-          {content}
+          <div
+            style={{ display: "flex", justifyContent: "center" }}
+            className="content-page"
+          >
+            {content}
+          </div>
         </Content>
         <Footer>
           <PageFooter />
@@ -157,4 +161,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default PageLayout;

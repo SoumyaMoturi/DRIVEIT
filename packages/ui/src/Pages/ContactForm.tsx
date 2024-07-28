@@ -1,21 +1,17 @@
 // src/components/ContactForm.js
-import React from "react";
+import React, { useState } from "react";
 import { Form, Input, Radio } from "antd";
 import Button from "../Components/Button/Button";
 
 const { TextArea } = Input;
 
 const ContactForm = () => {
-  const onFinish = (values: any) => {
-    console.log("Received values:", values);
-  };
-
+  const [formValues, setFormValues] = useState({});
   return (
     <Form
       name="contact"
       layout="vertical"
-      onFinish={onFinish}
-      style={{ maxWidth: 600, margin: "0 auto" }}
+      style={{ margin: "0 auto" }}
       className="contact-form"
     >
       <Form.Item
@@ -23,7 +19,12 @@ const ContactForm = () => {
         label="First Name"
         rules={[{ required: true, message: "Please enter your first name" }]}
       >
-        <Input placeholder="First Name" />
+        <Input
+          placeholder="First Name"
+          onChange={(e) =>
+            setFormValues({ ...formValues, firstname: e.target.value })
+          }
+        />
       </Form.Item>
 
       <Form.Item
@@ -31,7 +32,12 @@ const ContactForm = () => {
         label="Last Name"
         rules={[{ required: true, message: "Please enter your last name" }]}
       >
-        <Input placeholder="Last Name" />
+        <Input
+          placeholder="Last Name"
+          onChange={(e) =>
+            setFormValues({ ...formValues, lastname: e.target.value })
+          }
+        />
       </Form.Item>
 
       <Form.Item
@@ -45,7 +51,12 @@ const ContactForm = () => {
           },
         ]}
       >
-        <Input placeholder="Email" />
+        <Input
+          placeholder="Email"
+          onChange={(e) =>
+            setFormValues({ ...formValues, email: e.target.value })
+          }
+        />
       </Form.Item>
 
       <Form.Item
@@ -53,7 +64,12 @@ const ContactForm = () => {
         label="Phone Number"
         rules={[{ required: true, message: "Please enter your phone number" }]}
       >
-        <Input placeholder="Phone Number" />
+        <Input
+          placeholder="Phone Number"
+          onChange={(e) =>
+            setFormValues({ ...formValues, phonenumber: e.target.value })
+          }
+        />
       </Form.Item>
 
       <Form.Item
@@ -61,7 +77,11 @@ const ContactForm = () => {
         label="Select Subject"
         rules={[{ required: true, message: "Please select a subject" }]}
       >
-        <Radio.Group>
+        <Radio.Group
+          onChange={(e) =>
+            setFormValues({ ...formValues, subject: e.target.value })
+          }
+        >
           <Radio value="general">General Inquiry</Radio>
           <Radio value="support">Support</Radio>
           <Radio value="feedback">Feedback</Radio>
@@ -73,7 +93,13 @@ const ContactForm = () => {
         label="Message"
         rules={[{ required: true, message: "Please enter your message" }]}
       >
-        <TextArea rows={4} placeholder="Write your message" />
+        <TextArea
+          rows={4}
+          placeholder="Write your message"
+          onChange={(e) =>
+            setFormValues({ ...formValues, message: e.target.value })
+          }
+        />
       </Form.Item>
 
       <Form.Item>
@@ -82,7 +108,7 @@ const ContactForm = () => {
         </Button> */}
         <Button
           btnOnClick={() => {
-            console.log("send message");
+            console.log("send message", formValues);
           }}
           btnTitle={"Send Message"}
           showBtn={true}

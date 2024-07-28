@@ -1,0 +1,48 @@
+.find-vehicle {
+  .ant-card {
+    display: flex;
+    justify-content: center;
+    height: 122px;
+    padding: 30px 20px;
+    border-radius: 13px;
+    background: #e5e5e5;
+    color: #081630;
+    .ant-form-item {
+      display: flex;
+      width: 151px;
+      height: 61px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    label {
+      color: #081630;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .find-btn {
+      height: 41px;
+      padding: 10px 20px 15px 20px;
+      border-radius: 53px;
+      .btn-title {
+        color: var(--white, #fff);
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+  }
+  // .ant-form-item {
+  //   width: 150px;
+  //   height: 61px;
+  //   label {
+  //     color: #081630;
+  //     font-size: 13px;
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     line-height: normal;
+  //   }
+  // }
+}

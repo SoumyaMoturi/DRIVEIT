@@ -1,6 +1,10 @@
-.main-page {
+.dashboard-page {
+  width: 100%;
   .image-section {
     height: 732px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
     background: linear-gradient(
         0deg,
         rgba(8, 22, 48, 0.33) 0%,
@@ -8,5 +12,20 @@
       ),
       url("./../../../assets/icons/mainPage.png") lightgray 50% / cover
         no-repeat;
+
+    .dashboard-heading {
+      color: var(--white, #fff);
+      font-family: Poppins;
+      font-size: 58.506px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67.908px;
+      width: 631px;
+      // height: 212px;
+    }
+    // .filters {
+    //   margin-top: 14%;
+    //   margin-left: 18%;
+    // }
   }
 }
