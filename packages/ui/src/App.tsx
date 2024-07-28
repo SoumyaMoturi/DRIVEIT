@@ -5,8 +5,10 @@ import routes from "./routes/routes";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import PageLayout from "./layout";
 
-const clientId = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID || "";
-const clientSecret = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_SECRET || "";
+// const clientId = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID || "";
+// const clientSecret = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_SECRET || "";
+
+const clientId = "";
 
 function App() {
   return (
