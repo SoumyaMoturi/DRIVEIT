@@ -7,5 +7,6 @@
 /packages/ui/dist
 /packages/api/.nyc_output
 /.next
+/**/.env
 .env
 yalc.lock
