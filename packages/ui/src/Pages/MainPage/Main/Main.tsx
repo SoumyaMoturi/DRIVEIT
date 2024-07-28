@@ -1,9 +1,10 @@
 import React from "react";
 
 import FindVehicle from "../../../Components/FindVehicle/FindVehicle";
-import HowItWorks from "../../HowItWorks";
+import HowItWorks from "./HowItWorks";
 
 import "./main.scss";
+import OurServices from "./OurServices";
 
 const MainPage = () => {
   return (
@@ -26,6 +27,9 @@ const MainPage = () => {
       </div>
       <div className="how-it-works">
         <HowItWorks />
+      </div>
+      <div className="our-services">
+        <OurServices />
       </div>
     </div>
   );

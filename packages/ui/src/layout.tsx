@@ -5,11 +5,11 @@ import { Layout, Menu, MenuProps } from "antd";
 import Button from "./Components/Button/Button";
 import Search from "./Components/Search/search";
 import PageFooter from "./Components/Footer/footer";
-
-import "./layout.scss";
 import MainPage from "./Pages/MainPage/Main/Main";
 import ContactPage from "./Pages/ContactPage";
 import SignupModal from "./Pages/auth/signup";
+
+import "./layout.scss";
 
 const { Header, Content, Footer } = Layout;
 
@@ -157,7 +157,9 @@ const PageLayout: React.FC = () => {
           </div>
         </Content>
         <Footer>
-          <PageFooter />
+          <div className="footer">
+            <PageFooter />
+          </div>
         </Footer>
       </Layout>
       <SignupModal

@@ -1,0 +1,75 @@
+.our-services {
+  padding: 40px;
+  .our-services-container {
+    padding: 20px;
+    // background: #f9f9f9;
+    // max-width: 1440px;
+    width: 1196px;
+    margin: auto;
+
+    .car-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .services-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .service-card {
+      height: 80px;
+      width: 464px;
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .icon-col {
+        font-size: 32px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .service-icon {
+          background: #f1bc00;
+          padding: 20px;
+          border-radius: 22px;
+        }
+      }
+
+      .text-col {
+        padding-left: 10px;
+        .title {
+          color: #000;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+
+        .text-description {
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+        }
+        // .ant-typography {
+        //   margin: 0;
+        // }
+      }
+    }
+
+    .page-heading {
+      color: #f1bc00;
+      font-size: 42.677px;
+      font-style: normal;
+      text-align: center;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}

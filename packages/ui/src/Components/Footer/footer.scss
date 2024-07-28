@@ -1,5 +1,9 @@
 .footer {
   .footer-content {
+    ul.list {
+      list-style: none;
+      padding: 0;
+    }
     .description-text {
       width: 181px;
       color: #757095;
@@ -24,9 +28,6 @@
       text-wrap: wrap;
     }
 
-    ul.list {
-      list-style: none;
-    }
     .title {
       color: #181433;
       font-size: 16.267px;
