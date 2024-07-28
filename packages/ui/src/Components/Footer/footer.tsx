@@ -30,8 +30,8 @@
 
 // export default PageFooter;
 
-import React from "react";
-import { Row, Col, Form, Input, Button, Typography } from "antd";
+import React, { useState } from "react";
+import { Row, Col, Form, Input, Button, Typography, Space } from "antd";
 import {
   LinkedinOutlined,
   TwitterOutlined,
@@ -43,6 +43,7 @@ import "./footer.scss";
 const { Title, Text } = Typography;
 
 const PageFooter = () => {
+  const [emailAddress, setEmailAddress] = useState("");
   return (
     <div className="footer-content">
       <Row justify="center" align="middle">
@@ -124,14 +125,24 @@ const PageFooter = () => {
               <Title level={4} style={{ color: "#000" }}>
                 Join Our Newsletter
               </Title>
-              <Form layout="inline">
-                <Form.Item>
-                  <Input placeholder="Your email address" />
-                </Form.Item>
-                <Form.Item>
-                  <Button type="primary">Subscribe</Button>
-                </Form.Item>
-              </Form>
+              <Space>
+                <Space.Compact style={{ width: "100%" }}>
+                  <Input
+                    placeholder="Your email address"
+                    onChange={(e) => {
+                      setEmailAddress(e.target.value);
+                    }}
+                  />
+                  <Button
+                    type="primary"
+                    onClick={() => console.log("subscribe", emailAddress)}
+                    style={{ color: "white", backgroundColor: "black" }}
+                  >
+                    Subscribe
+                  </Button>
+                </Space.Compact>
+              </Space>
+
               <Text style={{ display: "block", color: "#000" }}>
                 * Will send you weekly updates for your better tour packages.
               </Text>

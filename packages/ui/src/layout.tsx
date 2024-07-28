@@ -9,6 +9,7 @@ import PageFooter from "./Components/Footer/footer";
 import "./layout.scss";
 import MainPage from "./Pages/MainPage/Main/Main";
 import ContactPage from "./Pages/ContactPage";
+import SignupModal from "./Pages/auth/signup";
 
 const { Header, Content, Footer } = Layout;
 
@@ -45,6 +46,7 @@ const PageLayout: React.FC = () => {
   const [searchtext, setSearchText] = useState("");
   const [content, setContent] = useState(null);
   const [selectedMenuItem, setSelectedMenuItem] = useState("logo");
+  const [showSignupModal, setShowSignupModal] = useState(false);
   const showContentByMenu = (): any => {
     switch (selectedMenuItem) {
       case "logo": {
@@ -138,6 +140,7 @@ const PageLayout: React.FC = () => {
             <Button
               btnOnClick={() => {
                 console.log("sign up clicked");
+                setShowSignupModal(true);
               }}
               btnTitle="Sign Up"
               showBtn={true}
@@ -157,6 +160,10 @@ const PageLayout: React.FC = () => {
           <PageFooter />
         </Footer>
       </Layout>
+      <SignupModal
+        visible={showSignupModal}
+        onClose={() => setShowSignupModal(false)}
+      />
     </div>
   );
 };

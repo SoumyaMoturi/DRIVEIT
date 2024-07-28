@@ -1,48 +1,72 @@
-// src/components/Signup.js
 import React, { useState } from "react";
-import GoogleAuth from "./googleAuth";
+import { Modal, Input, Button, Form } from "antd";
+import { LockOutlined, UserOutlined } from "@ant-design/icons";
+import { GoogleLogin, useGoogleLogin } from "@react-oauth/google";
 
-const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const SignupModal: React.FC<{ visible: boolean; onClose: () => void }> = ({
+  visible,
+  onClose,
+}) => {
+  const googleLogin = useGoogleLogin({
+    onSuccess: (response) => {
+      console.log("Google OAuth successful", response);
+      onClose(); // Close the modal on successful login
+    },
+    onError: (error) => {
+      console.error("Google OAuth failed", error);
+    },
+  });
 
-  //   const handleSignup = async (e) => {
-  //     e.preventDefault();
-  //     try {
-  //       const response = await axios.post("http://localhost:5000/signup", {
-  //         email,
-  //         password,
-  //       });
-  //       console.log(response.data);
-  //     } catch (error) {
-  //       console.error("Signup error:", error);
-  //     }
-  //   };
+  const handleSignupClick = (e: React.FormEvent) => {
+    e.preventDefault();
+    googleLogin(); // Trigger the Google login pop-up
+  };
+  const onFinish = (values: any) => {
+    console.log("Received values of form: ", values);
+  };
 
   return (
-    <div>
-      <form
-        onSubmit={() => {
-          console.log("sign up");
-        }}
+    <Modal title="Sign Up" open={visible} onCancel={onClose} footer={null}>
+      <Form
+        name="signup-form"
+        className="sign-up"
+        initialValues={{ remember: true }}
+        onFinish={onFinish}
       >
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-      <GoogleAuth />
-    </div>
+        <Form.Item
+          name="username"
+          rules={[{ required: true, message: "Please input your Username!" }]}
+        >
+          <Input
+            prefix={<UserOutlined className="site-form-item-icon" />}
+            placeholder="Username"
+          />
+        </Form.Item>
+        <Form.Item
+          name="password"
+          rules={[{ required: true, message: "Please input your Password!" }]}
+        >
+          <Input
+            prefix={<LockOutlined className="site-form-item-icon" />}
+            type="password"
+            placeholder="Password"
+          />
+        </Form.Item>
+
+        <Form.Item>
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="login-form-button"
+            onClick={handleSignupClick}
+            style={{ width: "100%" }}
+          >
+            Register now!
+          </Button>
+        </Form.Item>
+      </Form>
+    </Modal>
   );
 };
 
-export default Signup;
+export default SignupModal;

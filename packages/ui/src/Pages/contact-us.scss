@@ -6,9 +6,10 @@
   justify-content: center;
 
   .image-section {
-    // width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 709px;
-    // background: url("../assets/icons/contactHeader.png");
     background: linear-gradient(
         0deg,
         rgba(8, 22, 48, 0.33) 0%,
@@ -24,6 +25,19 @@
     height: 100%;
     background: rgba(8, 22, 48, 0.7); /* #081630 with opacity */
     mix-blend-mode: multiply;
+  }
+  .contact-page-heading {
+    color: var(--white, #fff);
+    text-align: center;
+    font-feature-settings: "liga" off;
+    font-family: "Sofia Pro";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    width: 982px;
+    z-index: 1;
+    margin-top: 40px;
   }
   .contact-card {
     display: flex;

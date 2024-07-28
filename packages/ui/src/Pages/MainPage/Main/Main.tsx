@@ -6,33 +6,6 @@ import HowItWorks from "../../HowItWorks";
 import "./main.scss";
 
 const MainPage = () => {
-  const cardItems = [
-    { name: "Toyota", icon: "🚗" },
-    { name: "Ford", icon: "🚙" },
-    { name: "Tesla", icon: "🚘" },
-    { name: "Chevrolet", icon: "🚖" },
-    { name: "BMW", icon: "🚗" },
-    { name: "Mercedes-Benz", icon: "🚙" },
-    { name: "Hyundai", icon: "🚘" },
-    { name: "Audi", icon: "🚖" },
-    { name: "KIA", icon: "🚗" },
-    { name: "BMW", icon: "🚗" },
-    { name: "Mercedes-Benz", icon: "🚙" },
-    { name: "Hyundai", icon: "🚘" },
-    { name: "Audi", icon: "🚖" },
-    { name: "KIA", icon: "🚗" },
-    { name: "BMW", icon: "🚗" },
-    { name: "Mercedes-Benz", icon: "🚙" },
-    { name: "Hyundai", icon: "🚘" },
-    { name: "Audi", icon: "🚖" },
-    { name: "KIA", icon: "🚗" },
-    { name: "BMW", icon: "🚗" },
-    { name: "Mercedes-Benz", icon: "🚙" },
-    { name: "Hyundai", icon: "🚘" },
-    { name: "Audi", icon: "🚖" },
-    { name: "KIA", icon: "🚗" },
-  ];
-
   return (
     <div className="dashboard-page">
       <div className="image-section">
@@ -51,13 +24,6 @@ const MainPage = () => {
           <FindVehicle />
         </div>
       </div>
-      {/* <div className="rent-by-brands">
-        <RentByBrand
-          rentByType="brands"
-          title="Rent By Brands"
-          cardItems={cardItems}
-        />
-      </div> */}
       <div className="how-it-works">
         <HowItWorks />
       </div>

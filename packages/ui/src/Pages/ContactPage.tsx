@@ -9,7 +9,7 @@ const ContactPage = () => (
   <div className="contact-page">
     <div className="image-section">
       <div className="overlay"></div>
-      <div className="dashboard-heading">
+      <div className="contact-page-heading">
         <div> Discover the world on wheels with our car rental service</div>
       </div>
     </div>
