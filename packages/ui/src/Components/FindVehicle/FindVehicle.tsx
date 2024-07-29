@@ -101,7 +101,12 @@ const FindVehicle = () => {
             </Col>
             <Col className="filter-item find-btn">
               <Form.Item>
-                <Button className="filter-btn">
+                <Button
+                  className="filter-btn"
+                  type="primary"
+                  htmlType="submit"
+                  onClick={() => console.log("find")}
+                >
                   Find a Vehicle <ArrowRightOutlined />
                 </Button>
               </Form.Item>

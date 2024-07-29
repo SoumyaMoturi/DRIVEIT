@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { MenuItems } from "../../../Constants/constants";
 import Search from "../../Search/search";
 import Button from "../Button";
-import D_LOGO from "../../../assets/icons/D.png";
-import RIVEIT_LOGO from "../../../assets/icons/RIVEIT.png";
 
 const { Header } = Layout;
 
@@ -34,16 +32,17 @@ const HeaderPage: FC<HeaderComponentProps> = ({
       }}
     >
       <div className="left-nav">
-        <Link to="/">
+        {/* <Link to="/">
           <div className="logo">
             <img className="D" alt="D" src={D_LOGO} />
             <img className="RIVEIT" alt="RIVEIT" src={RIVEIT_LOGO} />
           </div>
-        </Link>
+        </Link> */}
 
         <Menu
           theme="dark"
           mode="horizontal"
+          defaultSelectedKeys={[]}
           items={MenuItems.map((item) => ({
             ...item,
             label: <Link to={item.path}>{item.label}</Link>,
