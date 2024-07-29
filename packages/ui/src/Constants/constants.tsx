@@ -13,3 +13,12 @@ export const COMPONENT_THEME = {
     algorithm: true,
   },
 };
+
+export const MenuItems = [
+  { label: "Self Drives", key: "selfDrives", path: "/self-drives" },
+  { label: "Cabs", key: "cabs", path: "/cabs" },
+  { label: "Luxury Cars", key: "luxuryCars", path: "/luxury-cars" },
+  { label: "Buses", key: "buses", path: "/buses" },
+  { label: "Contact Us", key: "contact", path: "/contact" },
+  { label: "About Us", key: "about", path: "/about" },
+];

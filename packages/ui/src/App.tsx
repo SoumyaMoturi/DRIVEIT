@@ -1,7 +1,6 @@
 import { ConfigProvider } from "antd";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ANT_THEME_CONFIG, COMPONENT_THEME } from "./Constants/constants";
-import routes from "./routes/routes";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import PageLayout from "./layout";
 
@@ -24,13 +23,6 @@ function App() {
             <PageLayout />
           </ConfigProvider>
         </div>
-
-        <Routes>
-          {routes.map((item: any, i) => (
-            <Route path={item.path} element={<item.component />} key={i} />
-          ))}
-          {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
       </GoogleOAuthProvider>
     </BrowserRouter>
   );

@@ -25,12 +25,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(
-    //     0deg,
-    //     rgba(8, 22, 48, 0.33) 0%,
-    //     rgba(8, 22, 48, 0.33) 100%
-    //   ),
-    //   url("./assets/icons/mainPage.png") lightgray 50% / cover no-repeat;
 
     height: 116px;
     .logo {
@@ -69,10 +63,5 @@
     // padding: 60px;
     // display: flex;
     justify-content: center;
-  }
-
-  .ant-layout-footer {
-    height: 412px;
-    background: #f1bc00;
   }
 }

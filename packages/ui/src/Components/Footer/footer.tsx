@@ -42,7 +42,7 @@ import "./footer.scss";
 
 const { Title, Text } = Typography;
 
-const PageFooter = () => {
+const FooterPage = () => {
   const [emailAddress, setEmailAddress] = useState("");
   return (
     <div className="footer-content">
@@ -162,4 +162,4 @@ const PageFooter = () => {
   );
 };
 
-export default PageFooter;
+export default FooterPage;
