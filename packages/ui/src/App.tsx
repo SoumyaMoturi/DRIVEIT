@@ -4,10 +4,11 @@ import { ANT_THEME_CONFIG, COMPONENT_THEME } from "./Constants/constants";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import PageLayout from "./layout";
 
-// const clientId = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID || "";
+const clientId = "";
 // const clientSecret = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_SECRET || "";
 
-const clientId = "";
+// process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID
+
 function App() {
   return (
     <BrowserRouter>

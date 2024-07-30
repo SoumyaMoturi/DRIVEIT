@@ -1,0 +1,486 @@
+[
+  {
+    "car_id": -148723,
+    "decoration": null,
+    "cargroup_id": 176,
+    "name": "Renault Triber 2021",
+    "accessories": ["Manual", "Petrol", "7 Seats"],
+    "rating": {
+      "value": "4.51",
+      "color": "GOOD",
+      "trips": "19 Trips"
+    },
+    "central_bar": {
+      "content": []
+    },
+    "images": [
+      "https://zoomcar-assets.zoomcar.com/614503/HostCarImage/host_car_image_61450315aa009c-b889-4393-9c34-6ba8dda69008.jpg20240414-33-1qz6ijk",
+      "https://zoomcar-assets.zoomcar.com/614513/HostCarImage/host_car_image_6145132d047d32-557c-4551-ba41-7723f76b92c6.jpg20240414-30-1ahy9g6",
+      "https://zoomcar-assets.zoomcar.com/614514/HostCarImage/host_car_image_614514216e84bb-c68b-4852-bd9a-c66b9d0607bd.jpg20240414-36-hbxf8q",
+      "https://zoomcar-assets.zoomcar.com/614516/HostCarImage/host_car_image_61451627c805b1-5d91-48b3-8073-d874ca8aba0c.jpg20240414-36-1hgp8ay",
+      "https://zoomcar-assets.zoomcar.com/614515/HostCarImage/host_car_image_6145155b1e1ff4-dcd8-4d4e-ae75-579edff58f44.jpg20240414-33-bdjupl",
+      "https://zoomcar-assets.zoomcar.com/616550/HostCarImage/host_car_image_6165500a2e0341-bdf3-48bf-b77b-1289d21fc815.jpg20240416-36-1omzhyh",
+      "https://zoomcar-assets.zoomcar.com/616547/HostCarImage/host_car_image_6165478593f8c9-8407-4930-b83a-80031115bf5f.jpg20240416-51-1vozc7",
+      "https://zoomcar-assets.zoomcar.com/614508/HostCarImage/host_car_image_614508cd5d274e-29dd-4828-97b6-aa0e99b11dd6.jpg20240414-36-pmskwh",
+      "https://zoomcar-assets.zoomcar.com/614507/HostCarImage/host_car_image_614507c418dcb7-4256-41fd-9b6c-24ed870bc752.jpg20240414-36-h1ba9h",
+      "https://zoomcar-assets.zoomcar.com/614506/HostCarImage/host_car_image_6145063517395b-c457-4556-90eb-0a83c4f401a4.jpg20240414-36-cd3vwh",
+      "https://zoomcar-assets.zoomcar.com/614504/HostCarImage/host_car_image_6145042f2eef65-caaa-4f86-8981-c6b069893ea7.jpg20240414-33-1cfu17f"
+    ],
+    "discount": null,
+    "messages": [
+      {
+        "icon": "CAR_PICK_UP",
+        "text": "Get additional 20% discount",
+        "color": "INFO"
+      }
+    ],
+    "location": {
+      "icon": "WALK",
+      "text": "3.3 km away",
+      "mul_distance": 3.316221316737461
+    },
+    "tags": [
+      {
+        "text": "Active FASTag",
+        "tooltip": ""
+      },
+      {
+        "text": "Zoom+",
+        "tooltip": "Long Term"
+      }
+    ],
+    "old_checkout_params": {
+      "location_id": 179554,
+      "response_id": null,
+      "flags": [],
+      "available_add_ons": ["FASTAG"]
+    },
+    "checkout_params": {},
+    "product_tag": null,
+    "section_header": null,
+    "price_line_1": {
+      "striked_text": null,
+      "normal_text": "₹165/hr"
+    },
+    "price_line_2": {
+      "raw": 8580,
+      "header": "₹8,580 excluding fees",
+      "header_state": null,
+      "fare_breakup": {
+        "fare_items": [
+          {
+            "fare_item": [
+              {
+                "header": "Booking Price",
+                "value": "₹8,580",
+                "is_highlighted": "true",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              },
+              {
+                "header": "₹165 x 52 hours",
+                "value": " ",
+                "is_highlighted": "false",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              }
+            ]
+          }
+        ],
+        "fare_info": {
+          "disclaimer": null,
+          "fare_primary_info": {
+            "title": "ADDED ON NEXT STEP",
+            "messages": ["Damage Protection Cover", "Convenience fee"]
+          },
+          "fare_additional_info": {
+            "title": "Not Included",
+            "messages": ["Fuel is not included", "Toll charges not included"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "car_id": -142902,
+    "decoration": "guest_favourite",
+    "cargroup_id": 893,
+    "name": "Maruti Suzuki ALTO 2023",
+    "accessories": ["Manual", "Petrol", "5 Seats"],
+    "rating": {
+      "value": "4.60",
+      "color": "GOOD",
+      "trips": "10 Trips"
+    },
+    "central_bar": {
+      "content": []
+    },
+    "images": [
+      "https://zoomcar-assets.zoomcar.com/703882/HostCarImage/RackMultipart20240709-37-11v6h103a6d69a8-60a3-443e-a58f-c49da208a14f.jpg"
+    ],
+    "discount": null,
+    "messages": [
+      {
+        "icon": "CAR_PICK_UP",
+        "text": "Get additional 20% discount",
+        "color": "INFO"
+      }
+    ],
+    "location": {
+      "icon": "WALK",
+      "text": "4.2 km away",
+      "mul_distance": 4.248482763871229
+    },
+    "tags": [
+      {
+        "text": "Active FASTag",
+        "tooltip": ""
+      }
+    ],
+    "old_checkout_params": {
+      "location_id": 162301,
+      "response_id": null,
+      "flags": [],
+      "available_add_ons": ["FASTAG"]
+    },
+    "checkout_params": {},
+    "product_tag": null,
+    "section_header": null,
+    "price_line_1": {
+      "striked_text": null,
+      "normal_text": "₹70/hr"
+    },
+    "price_line_2": {
+      "raw": 3640,
+      "header": "₹3,640 excluding fees",
+      "header_state": null,
+      "fare_breakup": {
+        "fare_items": [
+          {
+            "fare_item": [
+              {
+                "header": "Booking Price",
+                "value": "₹3,640",
+                "is_highlighted": "true",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              },
+              {
+                "header": "₹70 x 52 hours",
+                "value": " ",
+                "is_highlighted": "false",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              }
+            ]
+          }
+        ],
+        "fare_info": {
+          "disclaimer": null,
+          "fare_primary_info": {
+            "title": "ADDED ON NEXT STEP",
+            "messages": ["Damage Protection Cover", "Convenience fee"]
+          },
+          "fare_additional_info": {
+            "title": "Not Included",
+            "messages": ["Fuel is not included", "Toll charges not included"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "car_id": -27733,
+    "decoration": null,
+    "cargroup_id": 392,
+    "name": "Maruti Suzuki ALTO 2023",
+    "accessories": ["Manual", "Petrol", "5 Seats"],
+    "rating": {
+      "value": "4.51",
+      "color": "GOOD",
+      "trips": "127 Trips"
+    },
+    "central_bar": {
+      "content": []
+    },
+    "images": [
+      "https://zoomcar-assets.zoomcar.com/84004/HostCarImage/host_car_image_8400446956abf-6b77-4bbd-b709-8ca291e9ff9b.jpg20230123-32-fbrr64",
+      "https://zoomcar-assets.zoomcar.com/84003/HostCarImage/host_car_image_8400328658afa-edf5-492b-a17d-dd464c465630.jpg20230211-40-1rczsz8",
+      "https://zoomcar-assets.zoomcar.com/84001/HostCarImage/host_car_image_8400143f66087-108e-48fe-98fb-4c2cb9473f78.jpg20230211-27-fy71s7",
+      "https://zoomcar-assets.zoomcar.com/84002/HostCarImage/host_car_image_8400232342b74-3d27-4cdc-bf12-2b2274cadc65.jpg20230123-63-16vn39i",
+      "https://zoomcar-assets.zoomcar.com/85006/HostCarImage/host_car_image_8500690312bff-50fa-430b-b9de-bdad7fd3b8be.jpg20230211-40-bljfl7",
+      "https://zoomcar-assets.zoomcar.com/84006/HostCarImage/host_car_image_840062803eb47-255a-495f-89ad-deee82f047c2.jpg20230211-34-1xsuqpm"
+    ],
+    "discount": null,
+    "messages": [
+      {
+        "icon": "CAR_PICK_UP",
+        "text": "Get additional 20% discount",
+        "color": "INFO"
+      }
+    ],
+    "location": {
+      "icon": "WALK",
+      "text": "3.6 km away",
+      "mul_distance": 3.6440734183323387
+    },
+    "tags": [
+      {
+        "text": "Active FASTag",
+        "tooltip": ""
+      }
+    ],
+    "old_checkout_params": {
+      "location_id": 82508,
+      "response_id": null,
+      "flags": [],
+      "available_add_ons": ["FASTAG"]
+    },
+    "checkout_params": {},
+    "product_tag": null,
+    "section_header": null,
+    "price_line_1": {
+      "striked_text": null,
+      "normal_text": "₹80/hr"
+    },
+    "price_line_2": {
+      "raw": 4160,
+      "header": "₹4,160 excluding fees",
+      "header_state": null,
+      "fare_breakup": {
+        "fare_items": [
+          {
+            "fare_item": [
+              {
+                "header": "Booking Price",
+                "value": "₹4,160",
+                "is_highlighted": "true",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              },
+              {
+                "header": "₹80 x 52 hours",
+                "value": " ",
+                "is_highlighted": "false",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              }
+            ]
+          }
+        ],
+        "fare_info": {
+          "disclaimer": null,
+          "fare_primary_info": {
+            "title": "ADDED ON NEXT STEP",
+            "messages": ["Damage Protection Cover", "Convenience fee"]
+          },
+          "fare_additional_info": {
+            "title": "Not Included",
+            "messages": ["Fuel is not included", "Toll charges not included"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "car_id": -27451,
+    "decoration": "guest_favourite",
+    "cargroup_id": 138,
+    "name": "Maruti Suzuki Swift Dzire 2023",
+    "accessories": ["Manual", "Petrol", "5 Seats"],
+    "rating": {
+      "value": "4.60",
+      "color": "GOOD",
+      "trips": "162 Trips"
+    },
+    "central_bar": {
+      "content": []
+    },
+    "images": [
+      "https://zoomcar-assets.zoomcar.com/101310/HostCarImage/101310_host_car_image_10131019d52095-10bc-435d-ad99-edfde2628f84ae6ca3d1-9756-4981-8455-f140306ab722.jpg",
+      "https://zoomcar-assets.zoomcar.com/101401/HostCarImage/101401_host_car_image_101401fddcd569-e2ca-4a37-856e-9e7acb3079563524eb2f-8dbb-4900-bb75-659d360b189e.jpg",
+      "https://zoomcar-assets.zoomcar.com/101495/HostCarImage/101495_host_car_image_101495fc39e631-f368-4c77-93d9-70f4f1ab0d10c1dce122-d488-47e8-9627-5297d5a1dae9.jpg",
+      "https://zoomcar-assets.zoomcar.com/107795/HostCarImage/107795_host_car_image_107795f5ff7dc7-ff0a-418a-977f-badcb93fe206079a2da2-5e7e-4a10-bd22-19ea9e452032.jpg",
+      "https://zoomcar-assets.zoomcar.com/107798/HostCarImage/107798_host_car_image_107798bb87a8e5-04e5-4319-882e-37866fb21cd2799055e4-7ab2-48c4-ae0c-815897233cb8.jpg",
+      "https://zoomcar-assets.zoomcar.com/107799/HostCarImage/107799_host_car_image_107799cf8925f6-1372-4cff-8001-54ce70c0f05e40915498-7e44-4cbb-88c5-456f7c054b57.jpg",
+      "https://zoomcar-assets.zoomcar.com/100087/HostCarImage/100087_host_car_image_100087eb17afe8-0ac4-47d7-8d56-d166ae36841bf684d252-ba7d-4214-a8b8-ed0a393ad438.jpg",
+      "https://zoomcar-assets.zoomcar.com/100092/HostCarImage/100092_host_car_image_1000924ea128c9-5949-4e02-96b4-e668de36e3e64ca957c8-24b1-4946-85c5-5a64028de0b3.jpg",
+      "https://zoomcar-assets.zoomcar.com/101496/HostCarImage/101496_host_car_image_101496fd53eb60-f020-46f7-b64e-94d1a98f5198921c49f6-8df8-4704-867b-809b5d30178f.jpg"
+    ],
+    "discount": null,
+    "messages": [
+      {
+        "icon": "CAR_PICK_UP",
+        "text": "Get additional 20% discount",
+        "color": "INFO"
+      }
+    ],
+    "location": {
+      "icon": "WALK",
+      "text": "0.4 km away",
+      "mul_distance": 0.3783147845744832
+    },
+    "tags": [
+      {
+        "text": "Active FASTag",
+        "tooltip": ""
+      },
+      {
+        "text": "Zoom+",
+        "tooltip": "Long Term"
+      }
+    ],
+    "old_checkout_params": {
+      "location_id": 147517,
+      "response_id": null,
+      "flags": [],
+      "available_add_ons": ["FASTAG"]
+    },
+    "checkout_params": {},
+    "product_tag": null,
+    "section_header": null,
+    "price_line_1": {
+      "striked_text": null,
+      "normal_text": "₹145/hr"
+    },
+    "price_line_2": {
+      "raw": 7540,
+      "header": "₹7,540 excluding fees",
+      "header_state": null,
+      "fare_breakup": {
+        "fare_items": [
+          {
+            "fare_item": [
+              {
+                "header": "Booking Price",
+                "value": "₹7,540",
+                "is_highlighted": "true",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              },
+              {
+                "header": "₹145 x 52 hours",
+                "value": " ",
+                "is_highlighted": "false",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              }
+            ]
+          }
+        ],
+        "fare_info": {
+          "disclaimer": null,
+          "fare_primary_info": {
+            "title": "ADDED ON NEXT STEP",
+            "messages": ["Damage Protection Cover", "Convenience fee"]
+          },
+          "fare_additional_info": {
+            "title": "Not Included",
+            "messages": ["Fuel is not included", "Toll charges not included"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "car_id": -55876,
+    "decoration": null,
+    "cargroup_id": 132,
+    "name": "Maruti Suzuki Swift 2023",
+    "accessories": ["Manual", "Petrol", "5 Seats"],
+    "rating": {
+      "value": "4.61",
+      "color": "GOOD",
+      "trips": "56 Trips"
+    },
+    "central_bar": {
+      "content": [
+        {
+          "icon": "HOME",
+          "text": "Home Delivery",
+          "expanded": false
+        }
+      ]
+    },
+    "images": [
+      "https://zoomcar-assets.zoomcar.com/301293/HostCarImage/host_car_image_30129376e5fbf8-a47e-4a1a-9c04-a48667192d08.jpg20230703-52-1qmh2as",
+      "https://zoomcar-assets.zoomcar.com/301296/HostCarImage/host_car_image_3012961efd3676-2ab1-4ca5-87da-82b8aa334d02.jpg20230703-51-mbqojo",
+      "https://zoomcar-assets.zoomcar.com/301295/HostCarImage/host_car_image_301295087d11d2-d5f0-4e17-8502-bf1f3ea75931.jpg20230703-27-1xq3ztz",
+      "https://zoomcar-assets.zoomcar.com/301292/HostCarImage/host_car_image_30129244c735e9-de6a-4621-ad11-5354bb17f1c1.jpg20230703-26-hpa5ce",
+      "https://zoomcar-assets.zoomcar.com/301294/HostCarImage/host_car_image_3012946938c54f-8daf-4cae-917f-2e107df41b77.jpg20230703-27-4ych6r",
+      "https://zoomcar-assets.zoomcar.com/301291/HostCarImage/host_car_image_3012910a07b012-2205-4896-9768-95c51c09b211.jpg20230703-38-amwlbv",
+      "https://zoomcar-assets.zoomcar.com/301290/HostCarImage/host_car_image_301290e2d3209e-c9f6-4d53-ad22-fb959b83ae4b.jpg20230703-51-xkzo1b",
+      "https://zoomcar-assets.zoomcar.com/301297/HostCarImage/host_car_image_3012977afa0c3e-333a-4c07-a821-3f246f6ada4e.jpg20230703-52-x0q1f1"
+    ],
+    "discount": null,
+    "messages": [
+      {
+        "icon": "CAR_PICK_UP",
+        "text": "Get additional 20% discount",
+        "color": "INFO"
+      }
+    ],
+    "location": {
+      "icon": "WALK",
+      "text": "4.8 km away",
+      "mul_distance": 4.835855345074948
+    },
+    "tags": [
+      {
+        "text": "Active FASTag",
+        "tooltip": ""
+      }
+    ],
+    "old_checkout_params": {
+      "location_id": 105240,
+      "response_id": null,
+      "flags": [],
+      "available_add_ons": ["HD", "FASTAG"]
+    },
+    "checkout_params": {},
+    "product_tag": null,
+    "section_header": null,
+    "price_line_1": {
+      "striked_text": null,
+      "normal_text": "₹160/hr"
+    },
+    "price_line_2": {
+      "raw": 8320,
+      "header": "₹8,320 excluding fees",
+      "header_state": null,
+      "fare_breakup": {
+        "fare_items": [
+          {
+            "fare_item": [
+              {
+                "header": "Booking Price",
+                "value": "₹8,320",
+                "is_highlighted": "true",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              },
+              {
+                "header": "₹160 x 52 hours",
+                "value": " ",
+                "is_highlighted": "false",
+                "striked_through": "false",
+                "value_state": "NORMAL"
+              }
+            ]
+          }
+        ],
+        "fare_info": {
+          "disclaimer": null,
+          "fare_primary_info": {
+            "title": "ADDED ON NEXT STEP",
+            "messages": ["Damage Protection Cover", "Convenience fee"]
+          },
+          "fare_additional_info": {
+            "title": "Not Included",
+            "messages": ["Fuel is not included", "Toll charges not included"]
+          }
+        }
+      }
+    }
+  }
+]
