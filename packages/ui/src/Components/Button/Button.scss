@@ -75,16 +75,20 @@
     }
   }
   &.custom-ant-tertiary-btn {
-    background-color: #ffffff;
-    border-radius: 32px;
-    border-color: #081630;
+    border-radius: 4px;
+    background: rgba(232, 232, 232, 0.5);
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    // border-color: #081630;
     color: var(--neutrals-n400) !important;
     &:hover {
-      background-color: #f1bc00;
+      background: #f1bc00 !important;
       border-color: #f1bc00;
     }
     &:active {
-      background: #f1bc00;
+      background: #f1bc00 !important;
     }
     // &:focus-visible {
     //   outline: 2px solid #f1bc00;

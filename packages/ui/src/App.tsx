@@ -8,7 +8,6 @@ import PageLayout from "./layout";
 // const clientSecret = process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_SECRET || "";
 
 const clientId = "";
-
 function App() {
   return (
     <BrowserRouter>

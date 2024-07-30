@@ -9,6 +9,13 @@
     position: absolute;
     bottom: 100px;
     left: 350px;
+    .ant-card-body {
+      padding: 15px;
+    }
+    .ant-form-item-explain-error {
+      color: #ff4d4f;
+      font-size: 10px;
+    }
     .filter-item {
       width: 160px;
       height: 41px;

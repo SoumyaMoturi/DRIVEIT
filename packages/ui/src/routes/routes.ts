@@ -1,5 +1,6 @@
+import About from "../Pages/About/About";
 import Signup from "../Pages/auth/signup";
-import CarListing from "../Pages/CarListing";
+import CarList from "../Pages/CarListing";
 import ContactPage from "../Pages/ContactPage";
 import MainPage from "../Pages/MainPage/Main/Main";
 
@@ -12,7 +13,8 @@ const routes: IRoute[] = [
   { path: "/", component: MainPage },
   { path: "/signup", component: Signup },
   { path: "/contact", component: ContactPage },
-  { path: "/cars-list", component: CarListing },
+  { path: "/about", component: About },
+  { path: "/cars-list", component: CarList },
 ];
 
 export default routes;

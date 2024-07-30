@@ -1,29 +1,41 @@
-.car-listing {
-  .car-card {
-    width: 288px;
-    height: 458px;
-    border-radius: 18px;
-    background: var(--white, #fff);
-    // img {
-    //   width: 234px;
-    //   height: 95px;
-    // }
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
 
-    .car-name {
-      color: #262626;
-      text-transform: capitalize;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 19px;
-    }
+.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-    .car-info {
-      color: #959595;
-      font-size: 13px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 19px;
-    }
-  }
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.car-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.view-details {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }

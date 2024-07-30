@@ -1,0 +1,31 @@
+.about {
+  .features {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .features h2 {
+    font-size: 1.5em;
+  }
+
+  .features-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-item p {
+    margin-top: 10px;
+  }
+}

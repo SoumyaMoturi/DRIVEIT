@@ -4,11 +4,13 @@ import { ArrowRightOutlined, SearchOutlined } from "@ant-design/icons";
 // import moment from "moment";
 
 import "./findVehicle.scss";
+import { useNavigate } from "react-router-dom";
 
 const { Option } = Select;
 
 const FindVehicle = () => {
   const [form] = Form.useForm();
+  const navigate = useNavigate();
   const onFinish = (values: any) => {
     console.log("Form Values:", values);
   };
@@ -105,7 +107,7 @@ const FindVehicle = () => {
                   className="filter-btn"
                   type="primary"
                   htmlType="submit"
-                  onClick={() => console.log("find")}
+                  onClick={() => navigate("./cars-list")}
                 >
                   Find a Vehicle <ArrowRightOutlined />
                 </Button>

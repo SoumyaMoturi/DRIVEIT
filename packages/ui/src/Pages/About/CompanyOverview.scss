@@ -1,0 +1,73 @@
+.about {
+  .company-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 45px;
+  }
+
+  .company-overview-text {
+    width: 590px;
+    .small-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p {
+        color: var(--Black---White-Gray100, #1f1f1f);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+    h2 {
+      color: var(--Black---White-Gray100, #1f1f1f);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  .company,
+  .products,
+  .our-team,
+  .learn-more {
+    cursor: pointer;
+    min-width: 180px;
+    height: 54px;
+    span {
+      color: var(--Black---White-Gray100, #1f1f1f);
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+
+  .learn-more {
+    background: #091242;
+    span {
+      color: var(--Black---White-Gray10, var(--white, #fff));
+    }
+    &:hover {
+      span {
+        color: var(--Black---White-Gray100, #1f1f1f);
+      }
+    }
+  }
+
+  .description-text {
+    color: #666c89;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151%;
+    align-self: stretch;
+  }
+}

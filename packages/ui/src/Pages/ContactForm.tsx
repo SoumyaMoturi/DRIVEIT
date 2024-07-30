@@ -1,7 +1,6 @@
 // src/components/ContactForm.js
 import React, { useState } from "react";
-import { Form, Input, Radio } from "antd";
-import Button from "../Components/Button/Button";
+import { Form, Input, Radio, Button } from "antd";
 
 const { TextArea } = Input;
 
@@ -103,17 +102,15 @@ const ContactForm = () => {
       </Form.Item>
 
       <Form.Item>
-        {/* <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
-          Send Message
-        </Button> */}
         <Button
-          btnOnClick={() => {
-            console.log("send message", formValues);
-          }}
-          btnTitle={"Send Message"}
-          showBtn={true}
-          classNames="btn custom-ant-primary-naked-btn"
-        />
+          type="primary"
+          htmlType="submit"
+          style={{ width: "100%" }}
+          className="btn custom-ant-primary-naked-btn"
+          onClick={() => console.log("submitted values", formValues)}
+        >
+          Send Message
+        </Button>
       </Form.Item>
     </Form>
   );
