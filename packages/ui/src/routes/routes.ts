@@ -1,6 +1,6 @@
 import About from "../Pages/About/About";
 import Signup from "../Pages/auth/signup";
-import CarList from "../Pages/CarListing";
+import CarList from "../Pages/CarListing/CarListing";
 import ContactPage from "../Pages/ContactPage";
 import MainPage from "../Pages/MainPage/Main/Main";
 

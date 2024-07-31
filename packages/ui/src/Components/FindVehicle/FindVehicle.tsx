@@ -1,7 +1,12 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Input, DatePicker, Select, Form, Button } from "antd";
+import { Card, Row, Col, DatePicker, Select, Form, Button } from "antd";
 import { ArrowRightOutlined, SearchOutlined } from "@ant-design/icons";
-// import moment from "moment";
+import {
+  AvailableLocations,
+  fuelOptions,
+  transmissionOptions,
+  vehicleOptions,
+} from "../../Constants/constants";
 
 import "./findVehicle.scss";
 import { useNavigate } from "react-router-dom";
@@ -14,29 +19,10 @@ const FindVehicle = () => {
 
   const navigate = useNavigate();
 
-  const vehicleOptions = [
-    { value: "suv", label: "SUV" },
-    { value: "sedan", label: "Sedan" },
-    { value: "hatchback", label: "Hatchback" },
-    { value: "luxury", label: "Luxury" },
-  ];
-
-  const transmissionOptions = [
-    { value: "manual", label: "Manual" },
-    { value: "automatic", label: "Automatic" },
-  ];
-
-  const fuelOptions = [
-    { value: "diesel", label: "Diesel" },
-    { value: "petrol", label: "Petrol" },
-    { value: "electric", label: "Electric" },
-  ];
-
-  const AvailableLocations = [
-    { value: "madinaguda", label: "Madinaguda" },
-    { value: "kukatpally", label: "Kukatpally" },
-    { value: "secunderabad", label: "Secunderabad" },
-  ];
+  const handleSubmit = () => {
+    console.log("filterData", formValues);
+    navigate("./cars-list");
+  };
 
   return (
     <div className="find-vehicle">
@@ -46,6 +32,7 @@ const FindVehicle = () => {
           name="car-filter"
           layout="vertical"
           className="car-filter-form"
+          onFinish={handleSubmit}
         >
           <Row gutter={[16, 16]}>
             <Col className="filter-item">
@@ -86,6 +73,22 @@ const FindVehicle = () => {
                 />
               </Form.Item>
             </Col>
+
+            <Col className="filter-item">
+              <Form.Item
+                name="dropoffDate"
+                label="Drop-off Date"
+                rules={[{ required: true, message: "Please select a date" }]}
+              >
+                <DatePicker
+                  format="DD/MM/YYYY"
+                  style={{ width: "100%" }}
+                  onChange={(value) =>
+                    setFormValues({ ...formValues, dropOfDate: value })
+                  }
+                />
+              </Form.Item>
+            </Col>
             <Col className="filter-item">
               <Form.Item
                 name="fuelType"
@@ -104,21 +107,6 @@ const FindVehicle = () => {
                     </Option>
                   ))}
                 </Select>
-              </Form.Item>
-            </Col>
-            <Col className="filter-item">
-              <Form.Item
-                name="dropoffDate"
-                label="Drop-off Date"
-                rules={[{ required: true, message: "Please select a date" }]}
-              >
-                <DatePicker
-                  format="DD/MM/YYYY"
-                  style={{ width: "100%" }}
-                  onChange={(value) =>
-                    setFormValues({ ...formValues, dropOfDate: value })
-                  }
-                />
               </Form.Item>
             </Col>
             <Col className="filter-item">
@@ -170,15 +158,7 @@ const FindVehicle = () => {
             </Col>
             <Col className="filter-item find-btn">
               <Form.Item>
-                <Button
-                  className="filter-btn"
-                  type="primary"
-                  htmlType="submit"
-                  onClick={() => {
-                    console.log("filterData", formValues);
-                    navigate("./cars-list");
-                  }}
-                >
+                <Button className="filter-btn" type="primary" htmlType="submit">
                   Find a Vehicle <ArrowRightOutlined />
                 </Button>
               </Form.Item>
